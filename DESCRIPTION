@@ -7,7 +7,7 @@ Authors@R: c(
     person("Masaki", "Hamada", email = "masaki_hamada@mist.i.u-tokyo.ac.jp", role = "cre"))
 Description: Consider a data matrix of n individuals with p variates. The objective general index (OGI)
     is a general index that combines the p variates into a univariate index in order to rank the n
-    individuals. THe OGI is always positively correlated with each of the variates.
+    individuals. The OGI is always positively correlated with each of the variates.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

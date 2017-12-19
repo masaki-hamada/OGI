@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "context(\"positive definite\")\n\ntest_that(\"check if S is positive semidefinite\", {\n  X = matrix(1:6, 3, 2)\n\n  expect_error(ogi(X), \"S is not positive definite.\")\n  expect_error(ogi(X, force=TRUE), NA)\n\n  S = matrix(c(-1,0,0,-1), 2, 2)\n\n  expect_error(cov2weight(S), \"S is not positive definite.\")\n  expect_error(cov2weight(S, force=TRUE), \"S is not positive semi-definite.\")\n\n  expect_error(cov2biu(S), \"S is not positive definite.\")\n\n})\n",
+    "created" : 1513153115767.000,
+    "dirty" : false,
+    "encoding" : "ASCII",
+    "folds" : "",
+    "hash" : "357034744",
+    "id" : "3747CE99",
+    "lastKnownWriteTime" : 1513154159,
+    "last_content_update" : 1513154159845,
+    "path" : "C:/OGI_package/OGI/tests/testthat/test_positive_definite.R",
+    "project_path" : "tests/testthat/test_positive_definite.R",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

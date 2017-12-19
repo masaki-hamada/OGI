@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# util\n\nmy.cov = function(X){\n  n = nrow(X)\n  stats::cov(X) * (n-1) / n\n}\n\nmy.scale = function(X){\n  n = nrow(X)\n  scale(X) / sqrt((n-1) / n)\n}\n\ncov.check = function(S){\n  # library(lpSolve)\n  p = nrow(S)\n  result = lpSolve::lp(\"min\", rep(0,p), rbind(S, rep(1,p)), rep(\"=\",p+1), c(rep(0,p),1))\n  result\n}\n\nord2num = function(v){ # ordered to numeric matrix\n  if(!is.ordered(v)) stop(\"class not match.\")\n  n = length(v)\n  q = nlevels(v)\n  if(q <= 1) stop(\"too few levels.\")\n  lv = levels(v)\n  Y = matrix(0, n, q-1) # contrast\n  for(j in 2:q){\n    w = (v == lv[j])\n    Y[w,1:(j-1)] = 1\n  }\n  Y\n}\n\nord.example = function(q, n=NULL){\n  f = ordered(1:q)\n  if(is.null(n)) return(f)\n  f[sample(1:q, n, replace=TRUE)]\n}\n\nogi.numeric = function(X){ # data.frame to matrix\n  n = nrow(X)\n  p = ncol(X)\n  Z = matrix(NA, n, 0)\n  idx = numeric(0)\n  for(i in 1:p){\n    if(is.numeric(X[,i])){\n      Z = cbind(Z, X[,i])\n      idx = c(idx, i)\n      next\n    }\n    if(is.ordered(X[,i])){\n      Y = ord2num(X[,i])\n      Z = cbind(Z, Y)\n      idx = c(idx, rep(i, ncol(Y)))\n      next\n    }\n    stop(\"class not match.\")\n  }\n  attr(Z, \"index\") = idx\n  Z\n}\n",
+    "created" : 1512811279335.000,
+    "dirty" : false,
+    "encoding" : "ASCII",
+    "folds" : "",
+    "hash" : "3878824496",
+    "id" : "168E9B99",
+    "lastKnownWriteTime" : 1512952147,
+    "last_content_update" : 1512952147761,
+    "path" : "C:/OGI_package/OGI/R/util.R",
+    "project_path" : "R/util.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

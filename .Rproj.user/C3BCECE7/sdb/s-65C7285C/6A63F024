@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "context(\"if nu is positive\")\n\ntest_that(\"check if nu is positivr\", {\n  X = matrix(c(1,2,4,3,5,6), 3, 2)\n\n  expect_error(ogi(X, nu=c(0,1)), \"nu is not positive.\")\n  expect_error(ogi(X, nu=c(1,1)), NA)\n\n})\n",
+    "created" : 1513230508718.000,
+    "dirty" : false,
+    "encoding" : "ASCII",
+    "folds" : "",
+    "hash" : "1768164302",
+    "id" : "6A63F024",
+    "lastKnownWriteTime" : 1513231390,
+    "last_content_update" : 1513231390797,
+    "path" : "C:/OGI_package/OGI/tests/testthat/test_nu_is_positive.R",
+    "project_path" : "tests/testthat/test_nu_is_positive.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

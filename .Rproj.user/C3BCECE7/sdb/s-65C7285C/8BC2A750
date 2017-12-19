@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "## Test environments\n* local Windows install, R 3.3.3\n* ubuntu 14.04 (on-travis-ci), R 3.4.2\n* win-builder (devel)\n\n\n## R CMD check results\n0 errors | 0 warnings | 0 notes\n\n## Reverse dependencies\nThere are no reverse dependencies.\n",
+    "created" : 1513144120494.000,
+    "dirty" : false,
+    "encoding" : "ASCII",
+    "folds" : "",
+    "hash" : "912617589",
+    "id" : "8BC2A750",
+    "lastKnownWriteTime" : 1513230431,
+    "last_content_update" : 1513230431613,
+    "path" : "C:/OGI_package/OGI/cran-comments.md",
+    "project_path" : "cran-comments.md",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}

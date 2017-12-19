@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: OGI\nType: Package\nTitle: Objective General Index\nVersion: 1.0.0\nAuthors@R: c(\n    person(\"Tomonari\", \"Sei\", email = \"sei@mist.i.u-tokyo.ac.jp\", role = \"aut\"),\n    person(\"Masaki\", \"Hamada\", email = \"masaki_hamada@mist.i.u-tokyo.ac.jp\", role = \"cre\"))\nDescription: Consider a data matrix of n individuals with p variates. The objective general index (OGI)\n    is a general index that combines the p variates into a univariate index in order to rank the n\n    individuals. THe OGI is always positively correlated with each of the variates.\nLicense: GPL-3\nEncoding: UTF-8\nLazyData: true\nImports:\n    lpSolve (>= 5.6.13),\n    stats (>= 3.3.3),\n    graphics (>= 3.3.3),\n    methods (>= 3.3.3)\nSuggests:\n    ade4 (>= 1.7.8),\n    bnlearn (>= 4.2),\n    testthat(>= 1.0.2)\nRoxygenNote: 6.0.1\n",
+    "created" : 1511335714141.000,
+    "dirty" : false,
+    "encoding" : "ASCII",
+    "folds" : "",
+    "hash" : "2256357554",
+    "id" : "351BF2AD",
+    "lastKnownWriteTime" : 1513227671,
+    "last_content_update" : 1513227671081,
+    "path" : "C:/OGI_package/OGI/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}
